@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/counter.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</head>
+<body>
+    <section class="h-100">
+        <header class="container h-100">
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="d-flex flex-column">
+                    <h1 class="text align-self-center p-2">Counter</h1>
+                    <h4 class="text align-self-center p-2">{{ count }} times</h4>
+                    <div>
+                        <a href="/add" class="btn btn-danger align-self-center p-2" role="button">Add two visits!</a>  
+                        <a href="/reset" class="btn btn-success align-self-center p-2" role="button">Reset</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    
+</body>
+</html>
